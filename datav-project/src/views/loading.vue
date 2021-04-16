@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div style="height: 100px;">
+  	<dv-loading>Loading</dv-loading>
+  </div>
 </template>
 
 <script>
