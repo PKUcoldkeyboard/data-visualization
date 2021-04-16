@@ -55,6 +55,9 @@
 	.nav div{
 		width: 192px;
 		height: 50px;	
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	.nav div a{
 		text-decoration: none;
