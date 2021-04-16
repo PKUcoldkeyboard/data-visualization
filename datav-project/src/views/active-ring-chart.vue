@@ -1,5 +1,5 @@
 <template>
-  <router-view/>
+  <div>我是active-ring-chart</div>
 </template>
 
 <script>
