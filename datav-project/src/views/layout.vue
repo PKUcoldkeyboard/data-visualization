@@ -30,11 +30,14 @@
   }
 </script>
 <style>
-	.wrapper{
+	body{
 		background: rgb(40,44,52);
+	}
+	.wrapper{
 		display: flex;
 		display: -webkit-flex;
 		width: 100%;
+		height: 100%;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
@@ -58,7 +61,7 @@
 		color:#e2777a;
 	}
 	.app-main{
-		min-height: 960px;
+		min-height: 100px;
 		margin-top: 60px;
 		width: 960px;
 	}
