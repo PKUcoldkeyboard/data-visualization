@@ -153,6 +153,16 @@ export default{
 
 
 
+### ！现成 style 样式！
+
+我又更新了一下 `active-ring-chart.vue` 
+
+加入了同一个页面**设置多个config的data**，可以参考
+
+还有就是**加入了用来写文字的 <div>**，并且写好了样式，因为大家需要每个图给个title，直接用那个嵌套一下<p>就好
+
+
+
 ### 编写教程
 
 目前是商定用 markdown 来写，然后到时候展示估计可以用markdown和网页一起来展示
