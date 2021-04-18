@@ -1,11 +1,13 @@
 <template>
   <div>
       <div class="text"><p>百分比展示</p></div>
-  		<dv-active-ring-chart :config="config1" style="width:300px;align:'center';height:300px" />
+  		<dv-active-ring-chart :config="config1" style="width:400px;align:'center';height:400px" />
+      <br><br>
       <div class="text"><p>原始值展示</p></div>
-      <dv-active-ring-chart :config="config2" style="width:300px;align:'center';height:300px" />
+      <dv-active-ring-chart :config="config2" style="width:400px;align:'center';height:400px" />
+      <br><br>
       <div class="text"><p>调整线条粗细</p></div>
-      <dv-active-ring-chart :config="config3" style="width:300px;align:'center';height:300px" />
+      <dv-active-ring-chart :config="config3" style="width:400px;align:'center';height:400px" />
   </div>
 </template>
 

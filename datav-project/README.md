@@ -163,11 +163,39 @@ export default{
 
 
 
+### ！关于图片引用！
+
+如果是组件config中的属性需要填入图片地址，目前无法使用本地地址，所以统一用超链接
+
+具体例子见 `conical-column-chart.vue`文件
+
+
+
 ### 编写教程
 
-目前是商定用 markdown 来写，然后到时候展示估计可以用markdown和网页一起来展示
+目前是商定用 markdown 来写
 
 
+
+### 关于展示
+
+目前商定是用markdown和网页配合展示
+
+有几个现成的做的还很不错的Demo，我们在展示完各部分组件之后，可以考虑展示一下这个完整的实现案例
+
+网址如下：
+
+http://datav.jiaminghi.com/demo/construction-data/index.html
+
+http://datav.jiaminghi.com/demo/manage-desk/index.html
+
+http://datav.jiaminghi.com/demo/electronic-file/index.html
+
+
+
+### 关于命名
+
+大家最好全部用英文命名
 
 
 

@@ -1,5 +1,5 @@
 <template>
-  <div style="height: 200px; ">
+  <div style="height: 400px;">
   	<dv-border-box-1></dv-border-box-1><br/>
   	<dv-border-box-2></dv-border-box-2><br/>
   	<dv-border-box-3></dv-border-box-3><br/>
