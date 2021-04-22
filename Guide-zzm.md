@@ -255,9 +255,60 @@ export default {
 
 ## 飞线图
 
+飞线图适用于在地图上表示流向的实例，例如航班的轨迹、人员流动等。
 
+```html
+<dv-flyline-chart :config="config" style="width:800px; height:800px;" />
+```
+
+#### `config`属性
+
+|      属性       |    说明    |    类型    | 可选值 | 默认值 |
+| :-------: | :--------: | :--------: | :----: | :----: |
+| centerPoint | 中心点坐标  | `Array<Number>` | `-` | `[0, 0]` |
+| points | 飞线起始点数据 | `Array` [1](#注释) | `-` | `[]` |
+| lineWidth | 飞线宽度 | `Number` | `-` | `1`|
+| orbitColor | 轨迹颜色 | `String` | `-` | [2](#注释) |
+| flylineColor | 飞线颜色 | `String` | `-` | `'#ffde93'` |
+| k | 飞线收束程度 [3](#注释) | `Number` | `[-1, 1]` | `-0.5` |
+| curvature | 飞线曲率 [4](#注释) | `Number` | `[1, 10]` | `5` |
+| flylineRadius | 飞线显示半径 [5](#注释) | `Number` | `-` | `100` |
+| duration | 飞线动画时长 | `Array<Number>` | `-` | `[20, 30]` [6](#注释) |
+| relative | 使用相对坐标 | `Boolean` | `true, false` | `true` |
+| bgImgUrl | 背景图url | `String` | `-` | `''` |
+| text | 文本配置项 | `Object` | `-` | [文本](#text属性) |
+| halo | 光晕环配置项 | `Object` | `-` | [halo](#halo属性) |
+| centerPointImg | 中心点图片配置 | `Object` | `-` | [centerPointImg](#centerPointImg属性) |
+| pointsImg | 飞线点图片配置 | `Object` | `-` | [pointsImg](#pointsImg属性)
+
+##### 注释
+
+1. 飞线起始点数据子元素可以为数组或对象，数组为坐标，对象包含点坐标位置和文本信息。
+
+2. 飞线轨迹颜色默认为`rgba(103, 224, 227, .2)`，如果想要隐藏轨迹线，可以设置`orbitColor`为`transparent`。
+
+3. `k`决定了飞线的收束程度，当为负值时，飞线呈凸形聚合，为正值时，飞线呈凹形聚合。
+
+4. `curvature`决定了飞线的弯曲程度，该值越小，飞线曲率越大，该值越大，飞线曲率越小。
+
+5. `flylineRadius`控制了飞线的显示区域半径，该值越大，飞线显示范围越大，飞线越长，该值越小，飞线越短。
+
+6. `duration`用于计算每一条飞线的动画时长（10 = 1s），`duration[0]`用于控制动画最短时长，`duration[1]`用于控制动画最长时长，飞线的动画时长将在此范围随机。如果想要每一条飞线的动画时长都相等可以将他们的值设为相同的。
+
+7. `relative`用于控制是否启用相对坐标模式，默认启用相对坐标模式可以使得飞线点的位置按照飞线图组件宽高比计算，在飞线图宽高改变时，飞线点的位置也能够相对正确标识真实的物理位置。
+
+#### text属性
+
+#### halo属性
+
+#### centerPointImg属性
+
+#### pointsImg属性
 
 ## 飞线图增强版
+
+
+
 ## 水位图
 
 水位图有三种形态，多种配置，具体使用方法如下。
