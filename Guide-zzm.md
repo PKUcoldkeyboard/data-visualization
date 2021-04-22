@@ -254,5 +254,61 @@ export default {
 在使用该方法时，`div`的`margin`属性不能设置为`'auto'`，否则会出现胶囊柱错位现象。可以调整元素`dv-capsule-charts`内部`padding`和`margin`等属性来设置您的图表位置。
 
 ## 飞线图
+
+
+
 ## 飞线图增强版
 ## 水位图
+
+水位图有三种形态，多种配置，具体使用方法如下。
+
+```html
+<dv-water-level-pond :config="config" style="width:150px;height:200px" />
+```
+
+### 矩形水位图
+
+这是水位图的默认形态。其`config`如下。
+
+```js
+export default {
+  data: [66]
+}
+```
+
+`data`表示水位位置，在水位图中默认显示出该值，并自动添加百分号。
+
+### 圆角水位图
+
+在矩形水位图的基础上增加了`config`的`shape`属性。
+
+```js
+export default {
+  data: [66, 45],
+  shape: 'roundRect'
+}
+```
+
+`data`可以包含多个数值，会在水位图上显示不同的水面，但是数值仅显示最大值，且不能改变。
+
+### 圆形水位图
+
+`config`的`shape`属性改为`'round'`。
+
+### `config`属性
+
+|      属性       |    说明    |    类型    | 可选值 | 默认值 |
+| :-------: | :--------: | :--------: | :----: | :----: |
+|    data   | 水位位置 (注1)  | `Array<Number>` | `-` | `[]` |
+| shape | 形状 | `String` | 三种形状 (注2) | `'rect'` |
+| colors | 水位图配色 | `Array<String>` | `hex|rgb|rgba|关键字` | 渐变色 (注3) |
+| waveNum | 波浪数量 | `Number` | `-` | `3` |
+| waveHeight | 波浪高度 | `Number` | `-` | `40` |
+| waveOpacity | 波浪透明度 | `Number` | `-` | `0.4` |
+| formatter | 信息格式化 | `String` | `-` | `'{value}%'` (注4) |
+
+注：
+1. 可以有多个水位，但是默认显示值为最大值；
+2. 矩形`rect`，圆角矩形`roundRect`，圆形`round`；
+3. 默认配色为`['#00BAFF', '#3DE7C9']`，自动应用渐变色，若不想使用渐变色，请配置两个相同的颜色；
+4. 自动使用最大水位值替换`{value}`标记。
