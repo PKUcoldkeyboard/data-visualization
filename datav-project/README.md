@@ -72,7 +72,7 @@ npm run serve
 
 较推荐所有的组件都首先加上上述 style 修饰 （居中），即：
 
-```
+```html
 <style>
 div{
 	margin:0 auto;
@@ -90,7 +90,7 @@ div{
 
 1. 教程网站上点击展示config数据后，会出现：
 
-```
+```html
 export default {
   data: [
     {
@@ -119,7 +119,7 @@ export default {
 
 2. 我们写到代码中的应该是：
 
-```
+```html
 export default{
   data(){return { config:{data:[
     {
