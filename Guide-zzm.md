@@ -45,7 +45,7 @@ color属性接受string类型取值，支持一主一副两个配色，主色在
 |      属性       |    说明    |    类型    | 可选值 | 默认值 |
 | :-------------: | :--------: | :--------: | :----: | :----: |
 |     dur      | 单次动画时长（秒） | `Number` |  `-`   |  `6`   |
-|    reverse   | 是否旋转90°  | `Bool` | `true`, `false`| `false` |
+|    reverse   | 是否旋转90°  | `Boolean` | `true`, `false`| `false` |
 
 dur这个属性可以设置时长，所以也可以用于展示一些已知时间的进度条。
 
@@ -74,7 +74,7 @@ reverse这个属性使用时同color一样，需要在属性前面加上`:`，�
 |      属性       |    说明    |    类型    | 可选值 | 默认值 |
 | :-------------: | :--------: | :--------: | :----: | :----: |
 |     dur      | 单次动画时长（秒） | `Number` |  `-`   |  `3`   |
-|    reverse   | 是否旋转90°  | `Bool` | `true`, `false`| `false` |
+|    reverse   | 是否旋转90°  | `Boolean` | `true`, `false`| `false` |
 与dv-decoration-2一样，使用reverse属性时，需要在前面加上`:`，其值为`true`时，装饰为竖直样式。
 
 #### dv-decoration-5
@@ -113,7 +113,7 @@ reverse这个属性使用时同color一样，需要在属性前面加上`:`，�
 
 |      属性       |    说明    |    类型    | 可选值 | 默认值 |
 | :-------------: | :--------: | :--------: | :----: | :----: |
-|    reverse   | 是否镜面翻转  | `Bool` | `true`, `false`| `false` |
+|    reverse   | 是否镜面翻转  | `Boolean` | `true`, `false`| `false` |
 
 使用reverse属性时，需要在前面加上`:`符号，当该属性值为`true`时，装饰将镜面翻转。
 
@@ -188,6 +188,71 @@ reverse这个属性使用时同color一样，需要在属性前面加上`:`，�
 它接收一种自定义颜色，作为背景圆盘的颜色，扫描的颜色默认不允许更改。
 
 ## 胶囊柱图
+
+胶囊柱图，实际上就是一个好看的条形图。
+
+```html
+<dv-capsule-chart :config="config" style="width:300px; height:200px" />
+```
+
+其`config`属性书写如下：
+```js
+export default {
+  data() { return {
+      config: {
+          data: [
+            {
+                name: '南阳',
+                value: 167
+            },
+            {
+                name: '周口',
+                value: 67
+            },
+            {
+                name: '漯河',
+                value: 123
+            },
+            {
+                name: '郑州',
+                value: 55
+            },
+            {
+                name: '西峡',
+                value: 98
+            }
+          ]
+      }
+  }}
+}
+```
+
+#### config属性
+
+它也有其他`config`属性。
+
+|      属性       |    说明    |    类型    | 可选值 | 默认值 |
+| :-------: | :--------: | :--------: | :----: | :----: |
+|    data   | 柱数据  | `Array<Object>` | `<name, value>` | `[]` |
+|    unit   | 单位  | `String` | `-` | `''` |
+| colors | 胶囊颜色 | `Array<String>` | `hex|rgb|rgba|关键字` | [1] |
+| showValue | 是否显示数值 | `Boolean` | `---` | `false` |
+
+[1]**colors默认值**：`['#37a2da', '#32c5e9', '#67e0e3', '#9fe6b8', '#ffdb5c', '#ff9f7f', '#fb7293']`
+
+#### data属性
+
+对`config`属性中提到的`data`属性作一个详细说明。
+
+|      属性       |    说明    |    类型    | 可选值 | 默认值 |
+| :-------: | :--------: | :--------: | :----: | :----: |
+|    name   | 柱名称  | `String` | `-` | `-` |
+| value | 柱对应值 | `Number` | `-` | `-` |
+
+#### NOTE
+
+在使用该方法时，`div`的`margin`属性不能设置为`'auto'`，否则会出现胶囊柱错位现象。可以调整元素`dv-capsule-charts`内部`padding`和`margin`等属性来设置您的图表位置。
+
 ## 飞线图
 ## 飞线图增强版
 ## 水位图

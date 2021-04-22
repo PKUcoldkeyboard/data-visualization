@@ -35,7 +35,7 @@
       name: '新乡',
       value: 80
     }
-  ]
+  ],
   },
   
   config2:{radius: '40%',
