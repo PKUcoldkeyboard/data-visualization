@@ -39,7 +39,7 @@
             [0.68, 0.17],
             [0.59, 0.10]
           ],
-          bgImgUrl: "/img/flyline-chart/map.jpg",
+          bgImgUrl: "http://datav.jiaminghi.com/img/flylineChart/map.jpg",
         },
         config2: {
           centerPoint: [0.48, 0.35],
@@ -62,12 +62,12 @@
             [0.68, 0.17],
             [0.59, 0.10]
           ],
-          bgImgUrl: '/img/flylineChart/map.jpg',
+          bgImgUrl: 'http://datav.jiaminghi.com/img/flylineChart/map.jpg',
           centerPointImg: {
-            url: '/img/flylineChart/mapCenterPoint.png'
+            url: 'http://datav.jiaminghi.com/img/flylineChart/mapCenterPoint.png'
           },
           pointsImg: {
-            url: '/img/flylineChart/mapPoint.png'
+            url: 'http://datav.jiaminghi.com/img/flylineChart/mapPoint.png'
           }
         },
         config3: {
@@ -142,12 +142,12 @@
               text: '安阳'
             }
           ],
-          bgImgUrl: '/img/flylineChart/map.jpg',
+          bgImgUrl: 'http://datav.jiaminghi.com/img/flylineChart/map.jpg',
           centerPointImg: {
-            url: '/img/flylineChart/mapCenterPoint.png'
+            url: 'http://datav.jiaminghi.com/img/flylineChart/mapCenterPoint.png'
           },
           pointsImg: {
-            url: '/img/flylineChart/mapPoint.png'
+            url: 'http://datav.jiaminghi.com/img/flylineChart/mapPoint.png'
           }
         },
         config4: {
@@ -223,12 +223,12 @@
             }
           ],
           k: 0.5,
-          bgImgUrl: '/img/flylineChart/map.jpg',
+          bgImgUrl: 'http://datav.jiaminghi.com/img/flylineChart/map.jpg',
           centerPointImg: {
-            url: '/img/flylineChart/mapCenterPoint.png'
+            url: 'http://datav.jiaminghi.com/img/flylineChart/mapCenterPoint.png'
           },
           pointsImg: {
-            url: '/img/flylineChart/mapPoint.png'
+            url: 'http://datav.jiaminghi.com/img/flylineChart/mapPoint.png'
           }
         }
       }

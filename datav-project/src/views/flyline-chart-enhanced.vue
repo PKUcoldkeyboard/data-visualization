@@ -169,7 +169,7 @@
               target: '郑州'
             }
           ],
-          bgImgSrc: '/img/flyline-chart/map.jpg'
+          bgImgSrc: 'http://datav.jiaminghi.com/img/flylineChart/map.jpg'
         },
         config2: {
           points: [
@@ -177,7 +177,7 @@
               name: '郑州',
               coordinate: [0.48, 0.35],
               icon: {
-                src: '/img/flyline-chart/mapCenterPoint.png',
+                src: 'http://datav.jiaminghi.com/img/flylineChart/mapCenterPoint.png',
                 width: 30,
                 height: 30
               }
@@ -323,9 +323,9 @@
           ],
           icon: {
             show: true,
-            src: '/img/flyline-chart/mapPoint.png'
+            src: 'http://datav.jiaminghi.com/img/flylineChart/mapPoint.png'
           },
-          bgImgSrc: '/img/flyline-chart/map.jpg'
+          bgImgSrc: 'http://datav.jiaminghi.com/img/flylineChart/map.jpg'
         },
         config3: {
           points: [
@@ -333,7 +333,7 @@
               name: '郑州',
               coordinate: [0.48, 0.35],
               icon: {
-                src: '/img/flyline-chart/mapCenterPoint.png',
+                src: 'http://datav.jiaminghi.com/img/flylineChart/mapCenterPoint.png',
                 width: 30,
                 height: 30
               },
@@ -482,12 +482,12 @@
           ],
           icon: {
             show: true,
-            src: '/img/flyline-chart/mapPoint.png'
+            src: 'http://datav.jiaminghi.com/img/flylineChart/mapPoint.png'
           },
           text: {
             show: true,
           },
-          bgImgSrc: '/img/flyline-chart/map.jpg'
+          bgImgSrc: 'http://datav.jiaminghi.com/img/flylineChart/map.jpg'
         },
         config4: {
           points: [
@@ -498,7 +498,7 @@
                 show: true,
               },
               icon: {
-                src: '/img/flyline-chart/mapCenterPoint.png',
+                src: 'http://datav.jiaminghi.com/img/flylineChart/mapCenterPoint.png',
                 width: 30,
                 height: 30
               },
@@ -647,12 +647,12 @@
           ],
           icon: {
             show: true,
-            src: '/img/flyline-chart/mapPoint.png'
+            src: 'http://datav.jiaminghi.com/img/flylineChart/mapPoint.png'
           },
           text: {
             show: true,
           },
-          bgImgSrc: '/img/flyline-chart/map.jpg'
+          bgImgSrc: 'http://datav.jiaminghi.com/img/flylineChart/map.jpg'
         },
         config5: {
           points: [
@@ -663,7 +663,7 @@
                 show: true,
               },
               icon: {
-                src: '/img/flyline-chart/mapCenterPoint.png',
+                src: 'http://datav.jiaminghi.com/img/flylineChart/mapCenterPoint.png',
                 width: 30,
                 height: 30
               },
@@ -812,13 +812,13 @@
           ],
           icon: {
             show: true,
-            src: '/img/flyline-chart/mapPoint.png'
+            src: 'http://datav.jiaminghi.com/img/flylineChart/mapPoint.png'
           },
           text: {
             show: true,
           },
           k: 0.5,
-          bgImgSrc: '/img/flyline-chart/map.jpg'
+          bgImgSrc: 'http://datav.jiaminghi.com/img/flylineChart/map.jpg'
         },
         config6: {
           points: [
@@ -829,7 +829,7 @@
                 show: true,
               },
               icon: {
-                src: '/img/flyline-chart/mapCenterPoint.png',
+                src: 'http://datav.jiaminghi.com/img/flylineChart/mapCenterPoint.png',
                 width: 30,
                 height: 30
               },
@@ -996,13 +996,13 @@
           ],
           icon: {
             show: true,
-            src: '/img/flyline-chart/mapPoint.png'
+            src: 'http://datav.jiaminghi.com/img/flylineChart/mapPoint.png'
           },
           text: {
             show: true,
           },
           k: 0.5,
-          bgImgSrc: '/img/flyline-chart/map.jpg'
+          bgImgSrc: 'http://datav.jiaminghi.com/img/flylineChart/map.jpg'
         }
       }
     }
