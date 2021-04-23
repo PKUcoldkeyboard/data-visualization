@@ -30,12 +30,12 @@
             [0.68, 0.17],
             [0.59, 0.10]
           ],
-          bgImgUrl: '../img/flyline-chart/map.jpg',
+          bgImgUrl: "/img/flyline-chart/map.jpg",
           centerPointImg: {
-            url: '../datav-project/img/flyline-chart/mapCenterPoint.png'
+            url: '/img/flyline-chart/mapCenterPoint.png'
           },
           pointsImg: {
-            url: '../img/flyline-chart/mapPoint.png'
+            url: '/img/flyline-chart/mapPoint.png'
           }
         }
       }
