@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 
 const routes = [{
         path: '',
-        redirect: '/datav/full-screen-container'
+        redirect: '/datav'
     },
     {
         path: '/datav',
