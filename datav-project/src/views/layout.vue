@@ -16,6 +16,7 @@
   		<div><router-link to="/datav/digital-flop">数字翻牌器</router-link></div>
   		<div><router-link to="/datav/scroll-board">轮播表</router-link></div>
   		<div><router-link to="/datav/scroll-ranking-board">排名轮播表</router-link></div>
+  		<div><router-link to="/datav/demo">demo演示</router-link></div>
   	</div>
   	<div class="app-main">
 		<transition name="fade" mode="out-in">

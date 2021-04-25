@@ -8,10 +8,13 @@ const routes = [{
         redirect: '/datav'
     },
     {
+        path: '/demo',
+        component: () => import('@/views/demo')
+    },
+    {
         path: '/datav',
         component: () => import('@/views/layout'),
-        children: [
-            {
+        children: [{
                 path: 'full-screen-container',
                 name: 'full-screen-container',
                 component: () => import('@/views/full-screen-container')
@@ -80,11 +83,31 @@ const routes = [{
                 path: 'scroll-board',
                 name: 'scroll-board',
                 component: () => import('@/views/scroll-board')
-            },{
+            }, {
                 path: 'scroll-ranking-board',
                 name: 'scroll-ranking-board',
                 component: () => import('@/views/scroll-ranking-board')
-            }
+            },
+            {
+                path: 'demo',
+                component: () => import('@/views/demo')
+            },
+            {
+                path: 'demo-flyline-chart-enhanced',
+                component: () => import('@/views/demo-components/demo-flyline-chart-enhanced')
+            },
+            {
+                path: 'demo-capsule-chart.vue',
+                component: () => import('@/views/demo-components/demo-capsule-chart.vue')
+            },
+            {
+                path: 'demo-conical-column-chart',
+                component: () => import('@/views/demo-components/demo-conical-column-chart')
+            },
+            {
+                path: 'demo-active-ring-chart',
+                component: () => import('@/views/demo-components/demo-active-ring-chart')
+            },
 
         ]
     }
