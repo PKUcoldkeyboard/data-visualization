@@ -355,7 +355,7 @@ export default {
 |      属性       |    说明    |    类型    | 可选值 | 默认值 |
 | :-------: | :--------: | :--------: | :----: | :----: |
 | points | 飞线点 | `Point` | --- | `[]`[Point](#增强版Point属性) |
-| line | 飞线 | `Flyline[]` | --- | `[]`[Flyline](#增强版Flyline属性) |
+| lines | 飞线 | `Flyline[]` | --- | `[]`[Flyline](#增强版Flyline属性) |
 | halo | 全局光晕配置 | `Halo` | --- | [halo](#增强版halo属性) |
 | text | 全局文本配置 | `Text` | --- | [text](#增强版text属性) |
 | icon | 全局图标配置 | `Icon` | --- | [icon](#增强版icon属性) |

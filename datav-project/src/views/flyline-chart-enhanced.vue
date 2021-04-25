@@ -1005,7 +1005,7 @@
           bgImgSrc: 'http://datav.jiaminghi.com/img/flylineChart/map.jpg'
         }
       }
-    }
+    },
   }
 </script>
 <style>
