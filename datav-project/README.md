@@ -199,6 +199,38 @@ http://datav.jiaminghi.com/demo/electronic-file/index.html
 
 
 
+### 关于本地Json的引入步骤
+
+- 首先，要将json文件上传至public文件夹-data文件夹内。
+
+- 然后，在src/utils文件夹中的request.js的文件中新增一个函数，格式如下：
+
+  ![image-20210425154824688](https://cuterwrite.oss-cn-beijing.aliyuncs.com/img/image-20210425154824688.png)
+
+- 接着，在vue文件中导入的数据的方法是：
+
+  - 首先在export default上面一行import刚才写的函数，格式如下，import {函数名} from ...
+
+    ![image-20210425154957824](https://cuterwrite.oss-cn-beijing.aliyuncs.com/img/image-20210425154957824.png)
+
+  - 然后，新建一个created()模块，表示渲染页面时执行某个操作
+
+    ![image-20210425155159966](https://cuterwrite.oss-cn-beijing.aliyuncs.com/img/image-20210425155159966.png)
+
+  - 其中，then()表示一个回调函数，表示执行getJson方法后继续执行某个操作，这里使用res=>{}形式来获取数据，格式为res.data，上图取到的数据为"vue"，因为我定义的json如下
+
+    {
+
+    ​	"hello":"vue"
+
+    }
+
+  - 赋值的时候，只需要将then()里面的内容改成下面的形式就行（其中mydata是在data()里面定义的数据）
+
+    ![image-20210425155556744](https://cuterwrite.oss-cn-beijing.aliyuncs.com/img/image-20210425155556744.png)
+
+
+
 --------
 
 ### 如遇到新的问题，欢迎解决后写入本文档并更新
