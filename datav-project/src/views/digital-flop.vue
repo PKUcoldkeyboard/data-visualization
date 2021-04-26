@@ -1,14 +1,15 @@
 <template>
-  <div>
-  	<div class="button" @click="changeConfig"><p>切换数据</p></div>
-    <br><br>
-    <dv-digital-flop :config="config" style="width:150px;height:75px;" />
-  </div>
+    <div>
+        <div class="button" @click="changeConfig">
+            <p>切换数据</p>
+        </div>
+        <br><br>
+        <dv-digital-flop :config="config" style="width:150px;height:75px;" />
+    </div>
 </template>
-
 <script>
 export default {
-  data() {
+    data() {
         return {
             config: {
                 number: [100],
@@ -16,7 +17,7 @@ export default {
             },
             first: true,
             second: false,
-            third:false
+            third: false
         }
     },
     methods: {
@@ -28,15 +29,14 @@ export default {
                 };
                 this.first = false;
                 this.second = true
-            } else if(this.second){
+            } else if (this.second) {
                 this.config = {
                     number: [100],
                     content: '{nt}个'
                 };
                 this.second = false;
                 this.third = true
-            }
-            else if(this.third){
+            } else if (this.third) {
                 this.config = {
                     number: [999],
                     content: '{nt}个'
@@ -49,15 +49,14 @@ export default {
 
     }
 }
-
 </script>
 <style>
-div{
-	margin:0 auto;
-  }
+div {
+    margin: 0 auto;
+}
 
-.text{
-    font-size:24px;
+.text {
+    font-size: 24px;
     width: 200px;
     height: 80px;
     color: #fff;
@@ -67,8 +66,9 @@ div{
     overflow: hidden;
     white-space: nowrap;
 }
+
 .button {
-  cursor: pointer;
+    cursor: pointer;
     font-size: 24px;
     width: 200px;
     height: 80px;

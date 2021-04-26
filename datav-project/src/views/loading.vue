@@ -1,7 +1,7 @@
 <template>
     <div>
-    	<div class="text">加载图</div>
-    	<br><br>
+        <div class="text">加载图</div>
+        <br><br>
         <dv-loading style="color:white">Loading...</dv-loading>
     </div>
 </template>

@@ -123,10 +123,10 @@ export default {
 }
 </script>
 <style>
-.border-box-content{
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	justify-content: center;
+.border-box-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
 </style>
