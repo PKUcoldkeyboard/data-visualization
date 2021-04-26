@@ -84,6 +84,7 @@ export default {
                     college.push(mydata[i].target);
                 }
             }
+            console.log(JSON.stringify(line))
             console.log(college)
             college = [
                 { name: "University of California - Berkeley", coordinate: [0.74, 0.32] },
